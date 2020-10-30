@@ -166,6 +166,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UnitTest1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComponentA\ComponentA.vcxproj">
+      <Project>{57c71d17-6b75-465f-872b-c0f9bd0c656b}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
